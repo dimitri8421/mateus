@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function criaCarrosel() {
     let htmlImage = "";
     for (let i = 0; i < images.length; i++) {
-        htmlImage += `<li class="splide__slide"><img src="/assets/img/${images[i].image}"><div titulo="${images[i].titulo}" descricao="${images[i].descricao}"></div></li>\n`;
+        htmlImage += `<li class="splide__slide"><img src="./assets/img/${images[i].image}"><div titulo="${images[i].titulo}" descricao="${images[i].descricao}"></div></li>\n`;
     }
     $('#carouselImage').html(`<div class="splide w-60 " role="group" aria-label="Splide Basic HTML Example"><div class="splide__track"><ul class="splide__list">${htmlImage}</ul></div></div>`)
 
