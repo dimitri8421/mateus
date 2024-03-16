@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus | Web designer</title>
+    <!-- <link rel="stylesheet" href="/assets/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    <link rel="stylesheet" href="/assets/css/circles.css">
+    <link rel="stylesheet" href="/assets/node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="shortcut icon" href="/assets/img/logo-blue.png" type="image/x-icon">
+</head>
+
+<body class="fundo-gradient">
+    <div id="loading">
+        <span class="loader"></span>
+    </div>
+    <div id="root">
+        <navbar-component></navbar-component>
+
+        <div id="home" class=" js-section mb-10 pt-5">
+            <div class="container position-relative  d-lg-flex pt-5">
+                <div class="fundo w-100 h-100  position-absolute d-flex align-items-center justify-content-between   overflow-hidden z-n1 ">
+                    <div  style="height: 28rem;width: 100%;">
+                        <div class="img" url-image="/assets/img/03.png" height-image="100%"  width-image="100%"></div>
+                    </div>
+                </div>
+                <div class="containerText">
+                    <h1>Construa conexões e <span class="gradient-text">destaque-se</span> da concorrência com uma marca
+                        <span class="gradient-text typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h1>
+                    <p class="pt-4 gray ">Investir em uma identidade visual resulta em uma comunicação efetiva, conexões
+                        duradouras e lealdade dos clientes.</p>
+                    <div class="pt-4">
+                        <a class="button-animado" href="#orcamento">SOLICITAR ORÇAMENTO</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="portfolio" class="js-section animation-section animation-section-top overflow-hidden mb-10 pt-5 " data-luz="direita">
+            <div class=" container pt-5 position-relative ">
+                <div class="title-icon d-flex align-items-center gap-3 title-opcao">
+                    <i class="fa fa-layer-group text-lg-center font-size-1 gray"></i>
+                    <div class="border-end h-rem-2"></div>
+                    <h2>Alguns <span class="gradient-text">projetos</span></h2>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center w-100 h-25 container-carousel" id="carouselImage"></div>
+                <div class="pt-3 d-flex justify-content-center align-items-center ">
+                    <div class="textProject fundo-gray">
+                        <h3><span class="gradient-text" id="tituloCarrosel"></span></h3>
+                        <p class="pt-3 " id="descricaoCarrosel"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="servico" class="js-section animation-section animation-section-top overflow-hidden mb-10 pt-5 ">
+            <div class=" container pt-5 position-relative">
+                <div class="title-icon d-flex align-items-center gap-3 title-opcao">
+                    <i class="fa fa-layer-group text-lg-center font-size-1 gray"></i>
+                    <div class="border-end h-rem-2"></div>
+                    <h2>Nossos <span class="gradient-text">Serviços</span></h2>
+                </div>
+
+                <div class="row pt-5 " id="card-servicos"></div>
+
+                <div class=" pt-5 position-relative d-flex  justify-content-center flex-column ">
+                    <div class="container-btn d-flex justify-content-center">
+                        <div class="btn-blue d-flex gap-3 align-items-center "
+                            onclick="apareceCard('#servicos-adicionais', this)">Serviços adicionais <i
+                                class="fa fa-arrow-down"></i></div>
+                    </div>
+                    <div class="row pt-5 containerEsconde escondido" id="servicos-adicionais"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="quem" class=" js-section pt-5 mb-10 pt-5 ">
+            <div class=" container position-relative d-flex justify-content-center overflow-hidden pt-5 ">
+                <div class="fundo d-flex align-items-center overflow-hidden z-n1 ">
+                    <div class="h-100">
+                        <div class="img" url-image="/assets/img/01.png" height-image="23rem" width-image="41rem">
+                        </div>
+                    </div>
+                </div>
+                <div class="containerText">
+                    <h2 class="animation-section animation-section-direita">Conheça o <span
+                            class="gradient-text">Mateus</span></h2>
+                    <p class="pt-4 gray text-start ">Me chamo Mateus e sou um especialista na criação de marcas impactantes e
+                        autênticas. Com uma combinação única de criatividade e estratégia, desenvolvo identidades
+                        visuais marcantes, nomes cativantes e experiências memoráveis que estabelecem uma conexão
+                        profunda com o público. Além disso, também lidero uma equipe altamente qualificada e que pode te
+                        oferecer a solução completa referente a serviços do mercado digital.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-5 mb-10 " data-cor="#414141">
+            <div class=" container position-relative d-flex justify-content-center flex-column align-items-center ">
+                <h4 class="text-center text-white ">Empresas que já <span class="gradient-text">passaram</span> por aqui:</h4>
+                <p class="pt-4 gray w-50 text-center ">Construímos estratégias, marcas, produtos e embalagens que criam valor
+                    significativo para as pessoas e evolução para os negócios.</p>
+
+                <div class="w-100 pt-5">
+                    <div class="partners four_logos  even-logos w-100 ">
+                        <div class="logo"><img class="img-responsive" src="/assets/img/empresas/alice@1x.png"
+                                alt="empresa"></div>
+                        <div class="logo"><img class="img-responsive" src="/assets/img/empresas/conta-azul@1x.png"
+                                alt="empresa"></div>
+                        <div class="logo"><img class="img-responsive" src="/assets/img/empresas/dance@1x.png"
+                                alt="empresa"></div>
+                        <div class="logo"><img class="img-responsive" src="/assets/img/empresas/eduzz@1x.png"
+                                alt="empresa"></div>
+                        <div class="logo"><img class="img-responsive" src="/assets/img/empresas/sestini@1x.png"
+                                alt="empresa"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="fedback" class=" js-section mb-10 pt-5">
+            <div class=" container pt-5 position-relative">
+                <div class="title-icon d-flex align-items-center gap-3 title-opcao">
+                    <i class="fa fa-layer-group text-lg-center font-size-1 gray"></i>
+                    <div class="border-end h-rem-2"></div>
+                    <h2>Feedback de <span class="gradient-text">clientes</span></h2>
+                </div>
+                <div class="pt-5 overflow-hidden" id="card-feedback"></div>
+            </div>
+        </div>
+
+
+        <div id="impressao" class=" pt-5 mb-10 pt-5 " data-cor="#fff">
+            <div class=" container position-relative d-flex  justify-content-center overflow-hidden flex-row-reverse ">
+                <div class="fundo d-flex align-items-center z-n1 justify-content-center ">
+                    <div class="h-100">
+                        <div class="img" url-image="/assets/img/02.png" height-image="25rem" width-image="15rem">
+                        </div>
+                    </div>
+                </div>
+                <div class="containerText">
+                    <h2 class="escuro h1" >A <span class="gradient-text">primeira</span> impressão é a que <span class="gradient-text">fica!</span></h2>
+                    <p class="pt-4 text-dark text-start ">Na era da concorrência e das infinitas opções disponíveis, a primeira impressão que sua marca causa é determinante para o futuro do seu negócio.</p>
+                    <p class="pt-4 text-dark text-start ">Investir em uma marca forte e impactante é o caminho para se destacar, conquistar a confiança do público e alcançar resultados extraordinários. A primeira impressão é a que fica, e eu e minha equipe estamos aqui para garantir que a sua seja inesquecível.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=" pt-5 mb-10 pt-5 " id="orcamento">
+            <div class="container position-relative d-lg-flex justify-content-center align-items-center text-center flex-column ">
+                <div class="container-circle z-n1 w-100 overflow-hidden  "></div>
+                <div>
+                    <h2><span class="gradient-text ">Vamos trabalhar juntos?</span></h2>
+                    <p class="pt-4 text-with">Para conseguir entender melhor sobre sua empresa e os serviços que você necessita, preencha um breve formulário para assim eu entrar em contato e montar uma proposta comercial ideal para o seu projeto!</p>
+                    <div class="pt-4">
+                        <a class="button-animado">SOLICITAR ORÇAMENTO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div  class=" mb-10 pt-5">
+            <div class=" container pt-5 position-relative">
+                <div class="title-icon d-flex align-items-center gap-3 title-opcao">
+                    <i class="fa fa-layer-group text-lg-center font-size-1 gray"></i>
+                    <div class="border-end h-rem-2"></div>
+                    <h2>Perguntas <span class="gradient-text">frequentes</span></h2>
+                </div>
+
+                <div class="pt-5" id="widgets"> </div>
+
+            </div>
+        </div>
+    </div>
+    <footer-component></footer-component>
+    <script src="/assets/js/fontawesome.js"></script>
+    <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="/assets/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="/assets/js/variaveis.js"></script>
+    <script src="/assets/js/components.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <script>
+        let larguraWindow = $(window).width();
+        const windowHalfSize = window.innerHeight * 0.6;
+        animateText();
+    </script>
+</body>
+
+</html>

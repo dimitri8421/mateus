@@ -1,0 +1,543 @@
+@charset "UTF-8";
+/* Variáveis */
+.circles * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.circles {
+  /* width: 300px;
+  height: 300px; */
+  height: 31rem;
+  animation: rotateCircle 4s linear infinite;
+}
+.circles .circle {
+  width: 150px;
+  height: 150px;
+  border: 3px solid transparent;
+}
+.circles .circle:nth-child(1) {
+  transform: rotate(0deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-0 2s -0.25s ease-in-out infinite;
+  border-color: hsl(345, 100%, 50%);
+}
+.circles .circle:nth-child(2) {
+  transform: rotate(15deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-1 2s -0.5s ease-in-out infinite;
+  border-color: hsl(0, 100%, 50%);
+}
+.circles .circle:nth-child(3) {
+  transform: rotate(30deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-2 2s -0.75s ease-in-out infinite;
+  border-color: hsl(15, 100%, 50%);
+}
+.circles .circle:nth-child(4) {
+  transform: rotate(45deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-3 2s -1s ease-in-out infinite;
+  border-color: hsl(30, 100%, 50%);
+}
+.circles .circle:nth-child(5) {
+  transform: rotate(60deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-4 2s -1.25s ease-in-out infinite;
+  border-color: hsl(45, 100%, 50%);
+}
+.circles .circle:nth-child(6) {
+  transform: rotate(75deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-5 2s -1.5s ease-in-out infinite;
+  border-color: hsl(60, 100%, 50%);
+}
+.circles .circle:nth-child(7) {
+  transform: rotate(90deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-6 2s -1.75s ease-in-out infinite;
+  border-color: hsl(75, 100%, 50%);
+}
+.circles .circle:nth-child(8) {
+  transform: rotate(105deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-7 2s -2s ease-in-out infinite;
+  border-color: hsl(90, 100%, 50%);
+}
+.circles .circle:nth-child(9) {
+  transform: rotate(120deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-8 2s -2.25s ease-in-out infinite;
+  border-color: hsl(105, 100%, 50%);
+}
+.circles .circle:nth-child(10) {
+  transform: rotate(135deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-9 2s -2.5s ease-in-out infinite;
+  border-color: hsl(120, 100%, 50%);
+}
+.circles .circle:nth-child(11) {
+  transform: rotate(150deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-10 2s -2.75s ease-in-out infinite;
+  border-color: hsl(135, 100%, 50%);
+}
+.circles .circle:nth-child(12) {
+  transform: rotate(165deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-11 2s -3s ease-in-out infinite;
+  border-color: hsl(150, 100%, 50%);
+}
+.circles .circle:nth-child(13) {
+  transform: rotate(180deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-12 2s -3.25s ease-in-out infinite;
+  border-color: hsl(165, 100%, 50%);
+}
+.circles .circle:nth-child(14) {
+  transform: rotate(195deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-13 2s -3.5s ease-in-out infinite;
+  border-color: hsl(180, 100%, 50%);
+}
+.circles .circle:nth-child(15) {
+  transform: rotate(210deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-14 2s -3.75s ease-in-out infinite;
+  border-color: hsl(195, 100%, 50%);
+}
+.circles .circle:nth-child(16) {
+  transform: rotate(225deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-15 2s -4s ease-in-out infinite;
+  border-color: hsl(210, 100%, 50%);
+}
+.circles .circle:nth-child(17) {
+  transform: rotate(240deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-16 2s -4.25s ease-in-out infinite;
+  border-color: hsl(225, 100%, 50%);
+}
+.circles .circle:nth-child(18) {
+  transform: rotate(255deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-17 2s -4.5s ease-in-out infinite;
+  border-color: hsl(240, 100%, 50%);
+}
+.circles .circle:nth-child(19) {
+  transform: rotate(270deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-18 2s -4.75s ease-in-out infinite;
+  border-color: hsl(255, 100%, 50%);
+}
+.circles .circle:nth-child(20) {
+  transform: rotate(285deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-19 2s -5s ease-in-out infinite;
+  border-color: hsl(270, 100%, 50%);
+}
+.circles .circle:nth-child(21) {
+  transform: rotate(300deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-20 2s -5.25s ease-in-out infinite;
+  border-color: hsl(285, 100%, 50%);
+}
+.circles .circle:nth-child(22) {
+  transform: rotate(315deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-21 2s -5.5s ease-in-out infinite;
+  border-color: hsl(300, 100%, 50%);
+}
+.circles .circle:nth-child(23) {
+  transform: rotate(330deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-22 2s -5.75s ease-in-out infinite;
+  border-color: hsl(315, 100%, 50%);
+}
+.circles .circle:nth-child(24) {
+  transform: rotate(345deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-23 2s -6s ease-in-out infinite;
+  border-color: hsl(330, 100%, 50%);
+}
+.circles .circle:nth-child(25) {
+  transform: rotate(360deg) translate(150px) scale(0.3);
+  animation: wavesAnimation-24 2s -6.25s ease-in-out infinite;
+  border-color: hsl(345, 100%, 50%);
+}
+
+@keyframes wavesAnimation-0 {
+  50% {
+    transform: rotate(0deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-1 {
+  50% {
+    transform: rotate(15deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-2 {
+  50% {
+    transform: rotate(30deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-3 {
+  50% {
+    transform: rotate(45deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-4 {
+  50% {
+    transform: rotate(60deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-5 {
+  50% {
+    transform: rotate(75deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-6 {
+  50% {
+    transform: rotate(90deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-7 {
+  50% {
+    transform: rotate(105deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-8 {
+  50% {
+    transform: rotate(120deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-9 {
+  50% {
+    transform: rotate(135deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-10 {
+  50% {
+    transform: rotate(150deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-11 {
+  50% {
+    transform: rotate(165deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-12 {
+  50% {
+    transform: rotate(180deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-13 {
+  50% {
+    transform: rotate(195deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-14 {
+  50% {
+    transform: rotate(210deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-15 {
+  50% {
+    transform: rotate(225deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-16 {
+  50% {
+    transform: rotate(240deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-17 {
+  50% {
+    transform: rotate(255deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-18 {
+  50% {
+    transform: rotate(270deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-19 {
+  50% {
+    transform: rotate(285deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-20 {
+  50% {
+    transform: rotate(300deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-21 {
+  50% {
+    transform: rotate(315deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-22 {
+  50% {
+    transform: rotate(330deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-23 {
+  50% {
+    transform: rotate(345deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-24 {
+  50% {
+    transform: rotate(360deg) translate(150px) scale(1);
+  }
+}
+@keyframes rotateCircle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Media query para ajustar os círculos em larguras menores */
+@media (max-width: 575px) {
+  .circles {
+    height: 18rem;
+  }
+  .circles .circle {
+    width: 100px; /* Tamanho ajustado para larguras menores */
+    height: 100px; /* Tamanho ajustado para larguras menores */
+  }
+
+  .circles .circle:nth-child(1) {
+    transform: rotate(0deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-0 2s -0.25s ease-in-out infinite;
+    border-color: hsl(345, 100%, 50%);
+  }
+  .circles .circle:nth-child(2) {
+    transform: rotate(15deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-1 2s -0.5s ease-in-out infinite;
+    border-color: hsl(0, 100%, 50%);
+  }
+  .circles .circle:nth-child(3) {
+    transform: rotate(30deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-2 2s -0.75s ease-in-out infinite;
+    border-color: hsl(15, 100%, 50%);
+  }
+  .circles .circle:nth-child(4) {
+    transform: rotate(45deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-3 2s -1s ease-in-out infinite;
+    border-color: hsl(30, 100%, 50%);
+  }
+  .circles .circle:nth-child(5) {
+    transform: rotate(60deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-4 2s -1.25s ease-in-out infinite;
+    border-color: hsl(45, 100%, 50%);
+  }
+  .circles .circle:nth-child(6) {
+    transform: rotate(75deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-5 2s -1.5s ease-in-out infinite;
+    border-color: hsl(60, 100%, 50%);
+  }
+  .circles .circle:nth-child(7) {
+    transform: rotate(90deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-6 2s -1.75s ease-in-out infinite;
+    border-color: hsl(75, 100%, 50%);
+  }
+  .circles .circle:nth-child(8) {
+    transform: rotate(105deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-7 2s -2s ease-in-out infinite;
+    border-color: hsl(90, 100%, 50%);
+  }
+  .circles .circle:nth-child(9) {
+    transform: rotate(120deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-8 2s -2.25s ease-in-out infinite;
+    border-color: hsl(105, 100%, 50%);
+  }
+  .circles .circle:nth-child(10) {
+    transform: rotate(135deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-9 2s -2.5s ease-in-out infinite;
+    border-color: hsl(120, 100%, 50%);
+  }
+  .circles .circle:nth-child(11) {
+    transform: rotate(150deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-10 2s -2.75s ease-in-out infinite;
+    border-color: hsl(135, 100%, 50%);
+  }
+  .circles .circle:nth-child(12) {
+    transform: rotate(165deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-11 2s -3s ease-in-out infinite;
+    border-color: hsl(150, 100%, 50%);
+  }
+  .circles .circle:nth-child(13) {
+    transform: rotate(180deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-12 2s -3.25s ease-in-out infinite;
+    border-color: hsl(165, 100%, 50%);
+  }
+  .circles .circle:nth-child(14) {
+    transform: rotate(195deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-13 2s -3.5s ease-in-out infinite;
+    border-color: hsl(180, 100%, 50%);
+  }
+  .circles .circle:nth-child(15) {
+    transform: rotate(210deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-14 2s -3.75s ease-in-out infinite;
+    border-color: hsl(195, 100%, 50%);
+  }
+  .circles .circle:nth-child(16) {
+    transform: rotate(225deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-15 2s -4s ease-in-out infinite;
+    border-color: hsl(210, 100%, 50%);
+  }
+  .circles .circle:nth-child(17) {
+    transform: rotate(240deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-16 2s -4.25s ease-in-out infinite;
+    border-color: hsl(225, 100%, 50%);
+  }
+  .circles .circle:nth-child(18) {
+    transform: rotate(255deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-17 2s -4.5s ease-in-out infinite;
+    border-color: hsl(240, 100%, 50%);
+  }
+  .circles .circle:nth-child(19) {
+    transform: rotate(270deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-18 2s -4.75s ease-in-out infinite;
+    border-color: hsl(255, 100%, 50%);
+  }
+  .circles .circle:nth-child(20) {
+    transform: rotate(285deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-19 2s -5s ease-in-out infinite;
+    border-color: hsl(270, 100%, 50%);
+  }
+  .circles .circle:nth-child(21) {
+    transform: rotate(300deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-20 2s -5.25s ease-in-out infinite;
+    border-color: hsl(285, 100%, 50%);
+  }
+  .circles .circle:nth-child(22) {
+    transform: rotate(315deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-21 2s -5.5s ease-in-out infinite;
+    border-color: hsl(300, 100%, 50%);
+  }
+  .circles .circle:nth-child(23) {
+    transform: rotate(330deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-22 2s -5.75s ease-in-out infinite;
+    border-color: hsl(315, 100%, 50%);
+  }
+  .circles .circle:nth-child(24) {
+    transform: rotate(345deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-23 2s -6s ease-in-out infinite;
+    border-color: hsl(330, 100%, 50%);
+  }
+  .circles .circle:nth-child(25) {
+    transform: rotate(360deg) translate(75px) scale(0.3);
+    animation: wavesAnimation-24 2s -6.25s ease-in-out infinite;
+    border-color: hsl(345, 100%, 50%);
+  }
+
+  @keyframes wavesAnimation-0 {
+    50% {
+      transform: rotate(0deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-1 {
+    50% {
+      transform: rotate(15deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-2 {
+    50% {
+      transform: rotate(30deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-3 {
+    50% {
+      transform: rotate(45deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-4 {
+    50% {
+      transform: rotate(60deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-5 {
+    50% {
+      transform: rotate(75deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-6 {
+    50% {
+      transform: rotate(90deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-7 {
+    50% {
+      transform: rotate(105deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-8 {
+    50% {
+      transform: rotate(120deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-9 {
+    50% {
+      transform: rotate(135deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-10 {
+    50% {
+      transform: rotate(150deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-11 {
+    50% {
+      transform: rotate(165deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-12 {
+    50% {
+      transform: rotate(180deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-13 {
+    50% {
+      transform: rotate(195deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-14 {
+    50% {
+      transform: rotate(210deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-15 {
+    50% {
+      transform: rotate(225deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-16 {
+    50% {
+      transform: rotate(240deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-17 {
+    50% {
+      transform: rotate(255deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-18 {
+    50% {
+      transform: rotate(270deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-19 {
+    50% {
+      transform: rotate(285deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-20 {
+    50% {
+      transform: rotate(300deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-21 {
+    50% {
+      transform: rotate(315deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-22 {
+    50% {
+      transform: rotate(330deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-23 {
+    50% {
+      transform: rotate(345deg) translate(85px) scale(1);
+    }
+  }
+  @keyframes wavesAnimation-24 {
+    50% {
+      transform: rotate(360deg) translate(85px) scale(1);
+    }
+  }
+}
+
+/*# sourceMappingURL=circles.css.map */
