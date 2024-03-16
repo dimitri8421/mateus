@@ -149,7 +149,7 @@ class Navbar extends HTMLElement {
         this.innerHTML = `
             <nav class="navbar navbar-expand-lg bg-transparent rounded navbar-dark fixed-top  blur container ">
                 <div class="container-fluid">
-                    <div class="navbar-brand" href="#"><img src="/assets/img/logo-white.png" alt="logo" id="logo"></div>
+                    <div class="navbar-brand" href="#"><img src="./assets/img/logo-white.png" alt="logo" id="logo"></div>
                     <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse d-lg-flex " id="navbarsExample11">
                         <a class="navbar-brand col-lg-3 me-0" href="#"></a>
