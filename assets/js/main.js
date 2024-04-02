@@ -233,7 +233,7 @@ function criaFedbeek() {
     for (let i = 0; i < fedbacks.length; i++) {
         exec++;
         let animacao = exec === 1 ? "animation-section-direita" : "animation-section-esquerda";
-        html += `<div class="position-relative"><div class="col-sm-6 w-100 overflow-hidden "><div class="card fundo-gray animation-section ${animacao}"><div class="card-body  flex-row align-items-center "><div class="header-card d-flex align-items-start  pb-5 gap-4 "><div class="bolha-shadow"></div></div><div class="textHeader"><h5><span class="gradient-text">${fedbacks[i].nome}</span></h5><p>${fedbacks[i].profissao}</p><p class="card-text gray">${fedbacks[i].comentario}</p></div></div></div></div></div>\n`;
+        html += `<div class="position-relative"><div class="col-sm-6 w-100 overflow-hidden "><div class="card fundo-gray animation-section ${animacao}"><div class="card-body  flex-row align-items-center "><div class="header-card d-flex align-items-start  pb-5 gap-4 "><div class="bolha-shadow"></div></div><div class="textHeader"><h5><span class="gradient-text">${fedbacks[i].nome}</span></h5><p>${fedbacks[i].profissao}</p><p class="card-text gray text-start">${fedbacks[i].comentario}</p></div></div></div></div></div>\n`;
         if (exec === 2) {
             exec = 0;
         }
