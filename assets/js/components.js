@@ -208,6 +208,10 @@ $(document).ready(()=> {
         el.css({'background': el.data('cor'), 'z-index': -1, 'position': 'relative'});
     });
 
+    $('[data-text]').each((i, e) => {
+        const el = $(e);
+        el.html(texts[el.data('text')]);
+    })
     $('.button-animado').each((i, e) => {
         e?.href === "" ? e.href = linkWhats: "";
     });

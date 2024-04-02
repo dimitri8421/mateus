@@ -100,7 +100,7 @@ span.cursor.typing {
 
 
 /* Bolhas */
-#home::before, #home::after {
+#home::before, #servico::before, #card-feedback > div::after, #home::after, #portfolio::after, #servico::after, #perguntas::after  {
   content: "";
   position: absolute;
   top: -50%;
@@ -111,8 +111,9 @@ span.cursor.typing {
   mix-blend-mode: screen;
   pointer-events: none;
   opacity: 0;
+  z-index: -1;
 }
-#home::before {
+#home::before,  #servico::before {
   right: calc(90% - 100px);
   width: 100%;
   height: 100%;
@@ -122,10 +123,32 @@ span.cursor.typing {
 #home::after {
   right: calc(51% - 100px);
   width: 36%;
-  height: 69%;
+  height: 25%;
   animation: light 5s 2.4s infinite;
 }
 
+#portfolio::after, #servico::after, #perguntas::after{
+  right: 0;
+  top: 24rem;
+  width: 30rem;
+  height: 30rem;
+  animation: light 5s 2.4s infinite;
+}
+
+#card-feedback > div::after {
+  /* right: 0; */
+  top: 0;
+  width: 20rem;
+  height: 20rem;
+  animation: light 5s 2.4s infinite;
+}
+
+.left::after {
+  left: 0; /* Posição à esquerda */
+}
+.right::after {
+  right: 0; /* Posição à direita */
+}
 /* Bolhas */
 
 /* Bolha new */

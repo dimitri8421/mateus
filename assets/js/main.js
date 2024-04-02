@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     criaWidget();
     clickSetaWidget();
     criaCircles();
+    alternarPosicao();
 })
 
 function criaCarrosel() {
@@ -232,7 +233,7 @@ function criaFedbeek() {
     for (let i = 0; i < fedbacks.length; i++) {
         exec++;
         let animacao = exec === 1 ? "animation-section-direita" : "animation-section-esquerda";
-        html += `<div class="col-sm-6 w-100"><div class="card fundo-gray animation-section ${animacao}"><div class="card-body  flex-row align-items-center "><div class="header-card d-flex align-items-start  pb-5 gap-4 "><div class="bolha-shadow"></div></div><div class="textHeader"><h5><span class="gradient-text">${fedbacks[i].nome}</span></h5><p>${fedbacks[i].profissao}</p><p class="card-text gray">${fedbacks[i].comentario}</p></div></div></div></div>\n`;
+        html += `<div class="position-relative"><div class="col-sm-6 w-100 overflow-hidden "><div class="card fundo-gray animation-section ${animacao}"><div class="card-body  flex-row align-items-center "><div class="header-card d-flex align-items-start  pb-5 gap-4 "><div class="bolha-shadow"></div></div><div class="textHeader"><h5><span class="gradient-text">${fedbacks[i].nome}</span></h5><p>${fedbacks[i].profissao}</p><p class="card-text gray">${fedbacks[i].comentario}</p></div></div></div></div></div>\n`;
         if (exec === 2) {
             exec = 0;
         }
@@ -254,3 +255,15 @@ function criaWidget() {
 function criaCircles() {
     document.querySelector('.container-circle').innerHTML = '<div class="circles"><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div></div>';
 }
+
+function alternarPosicao() {
+    var divs = document.querySelectorAll('#card-feedback > div');
+    var posicao = 'right';
+    
+    divs.forEach(function(div, index) {
+    //   div.style.float = posicao;
+    //   posicao = (posicao === 'left') ? 'right' : 'left';
+    div.classList.toggle('left', index % 2 === 0); // Adiciona a classe 'left' para índices pares
+    div.classList.toggle('right', index % 2 !== 0);
+    });
+  }

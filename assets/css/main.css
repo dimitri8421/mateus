@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Coolvetica";
-    src: url(/assets/fonts/Coolvetica/coolvetica\ rg.otf);
+    src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
 }
 
 /* @font-face {
@@ -31,6 +31,9 @@ h2 {
     margin: 0 !important;
 }
 
+b {
+    color: #e1e1e1;
+}
 /* h1 {
     font-size: 2.8rem !important;
 } */
@@ -57,7 +60,8 @@ h2 {
 
 .fundo-gray {
     /* background: #1818188f !important; */
-    background: #161616 !important;
+    /* background: #161616 !important; */
+    background: #1616167a !important;
 }
 
 .escuro {
@@ -220,8 +224,9 @@ h2 {
     gap: 4rem;
 }
 
-#card-feedback>div {
+#card-feedback>div>div {
     padding-bottom: 2rem !important;
+    position: relative;
 }
 
 /* Card */
@@ -391,6 +396,10 @@ h2 {
 }
 
 @media (max-width: 575px) {
+    #portfolio::after, #servico::after,#fedback::after {
+        width: 15rem !important;
+        height: 15rem !important;
+    }
     #home .fundo {
         width: 95% !important;
     }
@@ -428,6 +437,9 @@ h2 {
     .text-with {
         width: 100% !important;
     }
+    .box > span {
+        inset: 2px !important;
+      }
 }
 
 @media (max-width: 388px) {

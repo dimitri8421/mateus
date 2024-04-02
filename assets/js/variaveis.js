@@ -96,7 +96,7 @@ let fedbacks = [
     {
         "nome": "Matheus Staudinger",
         "profissao": 'Fisioterapeuta',
-        "comentario": 'Se tem uma palavra que se encaixa no meu projeto feito pelo Jhonzzera, eu diria “impecável”. Conseguiu atingir os tópicos mais importantes que eu pedi, dando modernidade, autenticidade, e a responsabilidade que a marca traz, técnica apurada e objetividade. Trabalho impecável!'
+        "comentario": 'Mateus, queria te dar um feedback: <br>Você é muito atencioso e pro ativo, além de ter muita qualidade em suas entregas. Fiquei muito feliz com seu atendimento, você se mostrou extremamente interessado com as minhas demandas e necessidades, estando sempre disponível para ajustar o que fosse necessário. Muito obrigada!'
     },
     {
         "nome": "Gisela Meireles",
@@ -142,3 +142,8 @@ let widgets = [
     },
     
 ]; 
+
+const texts = {
+    "quem": `Sou <b>designer especialista em social media e landing pages</b> para empresas e infoprodutores.<br><br>
+    Desde 2022 meu trabalho é marcado pela busca constante de novos aprendizados, como <b>o objetivo de destacar as empresas dos meus clientes</b> através de um design atrativo,funcional e inovador`
+};
