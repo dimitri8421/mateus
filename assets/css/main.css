@@ -296,7 +296,9 @@ b {
     background: radial-gradient(circle, rgba(187, 82, 243, 1) 0%, rgba(34, 47, 245, 1) 100%);
     z-index: 99999;
 }
-
+p.card-text.gray {
+    text-align: start;
+}
 @media (max-width: 991px) {
     .splide {
         width: 100% !important;
