@@ -397,6 +397,9 @@ b {
     .clients-logos .partners.four_logos .logo {
         width: 25%;
     }
+    #card-servicos .card-body {
+        height: 100%;
+    }
 }
 
 @media (max-width: 575px) {
